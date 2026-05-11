@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:3000"
+  // baseURL: "http://localhost:3000"
+  baseURL = "https://blog-project-backend-7jm6.onrender.com"
 });
 
 export const getUsers = () => API.get("/users");
